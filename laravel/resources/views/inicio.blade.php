@@ -11,8 +11,8 @@
 		<thead>
 			<tr>
 				<th>ID</th>
-				<th>Nombre</th>
-				<th>Apellido</th>
+				<th>Nome</th>
+				<th>Sobrenome</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -36,7 +36,7 @@
 	@endfor
 
 	<select>
-		<option value="" disabled selected>Seleccione una opción</option>
+		<option value="" disabled selected>Selecione uma opção</option>
 		@foreach($tipo_documento as $row)
 			<option value="{{$row['id']}}">{{$row['sigla']}}</option>
 		@endforeach
