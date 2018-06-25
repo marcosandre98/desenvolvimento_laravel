@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Crear Usuario</div>
+                <div class="panel-heading">Criar Usuario</div>
                 <div class="panel-body">
 
                     <form class="form-horizontal" id="fCreaUsuario" data-route="{{route('usuario.store')}}" data-method="POST">
@@ -13,7 +13,7 @@
                         {{ csrf_field() }}                        
 
                         <div class="form-group">
-                            <label for="nombre" class="col-md-4 control-label">Nombre</label>
+                            <label for="nombre" class="col-md-4 control-label">Nome</label>
 
                             <div class="col-md-6">
                                 <input id="nombre" type="text" class="form-control" name="nombre" autofocus>
@@ -24,7 +24,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="correo" class="col-md-4 control-label">Correo Electrónico</label>
+                            <label for="correo" class="col-md-4 control-label">E-mail</label>
 
                             <div class="col-md-6">
                                 <input id="correo" type="email" class="form-control" name="correo_electrónico">
@@ -34,7 +34,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="contrasena" class="col-md-4 control-label">Contraseña</label>
+                            <label for="contrasena" class="col-md-4 control-label">Senha</label>
 
                             <div class="col-md-6">
                                 <input id="contrasena" type="password" class="form-control" name="contraseña">
@@ -45,7 +45,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="confirma_contrasena" class="col-md-4 control-label">Confirmar Contraseña</label>
+                            <label for="confirma_contrasena" class="col-md-4 control-label">Senha</label>
 
                             <div class="col-md-6">
                                 <input id="confirma_contrasena" type="password" class="form-control" name="confirma_contraseña">
@@ -55,7 +55,7 @@
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="button" id="BtnCreaUsuario" class="btn btn-primary btnAjax" data-form="fCreaUsuario">
-                                    Registrar
+                                    Criar usuário
                                 </button>
                             </div>
                         </div>

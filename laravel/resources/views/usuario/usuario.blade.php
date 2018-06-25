@@ -6,7 +6,7 @@
 
 @section('contenido')
     <a href="{{route('usuario.create')}}">
-    <button type="button" class="btn btn-primary">Crear Usuario</button></a>
+    <button type="button" class="btn btn-primary">Criar Usuario</button></a>
 
     <br><br>
 	
@@ -14,9 +14,9 @@
 	    <thead>
 	      <tr>
 	        <th>ID</th>
-	        <th>NOMBRE</th>
-	        <th>CORREO</th>
-            <th>ACCION</th>
+	        <th>NOME</th>
+	        <th>EMAIL</th>
+            <th>ACAO</th>
 	      </tr>
 	    </thead>
 	</table>

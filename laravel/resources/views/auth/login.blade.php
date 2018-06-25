@@ -11,7 +11,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group">
-                            <label for="email" class="col-md-4 control-label">Correo Electrónico</label>
+                            <label for="email" class="col-md-4 control-label">E-mail</label>
 
                             <div class="col-md-6">
                                 <input type="email" class="form-control" name="correo_electrónico" autofocus>
@@ -22,7 +22,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="password" class="col-md-4 control-label">Contraseña</label>
+                            <label for="password" class="col-md-4 control-label">Senha</label>
 
                             <div class="col-md-6">
                                 <input type="password" class="form-control" name="contraseña">
@@ -35,7 +35,7 @@
                             <div class="col-md-6 col-md-offset-4">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Recordarme
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Lembrar
                                     </label>
                                 </div>
                             </div>
@@ -44,11 +44,11 @@
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
                                 <button type="button" class="btn btn-primary btnAjax" data-form="formPreLogin">
-                                    Ingresar
+                                    Entrar
                                 </button>
 
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    ¿Olvidó la contraseña?
+                                    Esqueceu a senha?
                                 </a>
                             </div>
                         </div>
