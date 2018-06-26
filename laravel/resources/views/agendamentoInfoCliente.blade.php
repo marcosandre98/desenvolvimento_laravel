@@ -113,7 +113,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="dt_nascimento" class="col-md-4 control-label">Data Nascimento:</label>
+                            <label for="dt_nascimento" class="col-md-4 control-label">Data de Nascimento:</label>
 
                             <div class="col-md-6">
                                 <input id="dt_nascimento" type="date" class="form-control" name="dt_nascimento">
