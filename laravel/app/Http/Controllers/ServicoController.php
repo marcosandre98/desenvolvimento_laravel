@@ -47,9 +47,13 @@ class ServicoController extends Controller
     {
         //return $request;
 
-        $regla = ['descricao'=>'required',
-                 'preco'=>'required'
-                 ];
+        $regla = [
+            //'id'=>'required',
+            'descricao'=>'required',
+            'preco'=>'required',
+            'tempo_servico'=>'required',
+            'id_empresa'=>'required'
+        ];
 
         $valida = Validator::make($request->all(),$regla);
         
@@ -59,28 +63,17 @@ class ServicoController extends Controller
         }
 
         Servico::create([
-                'nm_descricao' => $request->descricao,
+                //'id' => $request->id,
+                'descricao' => $request->descricao,
                 'preco' => $request->preco,
-                //'created_at' => date('Y-m-d h:i:s')
+                'tempo_servico' => $request->tempo_servico,
+                'id_empresa' => $request->id_empresa,
+                'created_at' => date('Y-m-d h:i:s')
             ]);
         
         //return ['status'=>true,'out'=>'reload'];
         //return ['status'=>true,'out'=>'redirect','route'=>route('home')];
-        return ['status'=>true,'out'=>'alert','title'=>'Atenção','html'=>'Serviço criado com <b>Sucesso!</b>'];
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        $data = Servico::findOrFail($id);
-        $dat = ["u"=>$data];
-        $html = View::make('servico.verServico',$dat)->render();
-        return ['title'=>'Detalle','html'=>$html]; 
+        return ['status'=>true,'out'=>'alert','title'=>'Atenção','html'=>'Serviço cadastrado com <b>Sucesso</b>'];
     }
 
     /**
@@ -107,10 +100,12 @@ class ServicoController extends Controller
     {
         $u = Servico::findOrFail($id);
 
-        $regla = ['descricao'=>'required',
-                 //'email'=>['required','email',
-                  //          Rule::unique('users')->ignore($u->email,'email')]
-                ];
+        $regla = [
+            'descricao'=>'required',
+            'preco'=>'required',
+            'tempo_servico'=>'required',
+            'id_empresa'=>'required'
+        ];
 
         $valida = Validator::make($request->all(),$regla);
         
@@ -119,8 +114,10 @@ class ServicoController extends Controller
                     'errors' => $valida->messages()];
         }        
 
-        $u->nm_descricao = $request->descricao;
+        $u->descricao = $request->descricao;
         $u->preco = $request->preco;
+        $u->tempo_servico = $request->tempo_servico;
+        $u->id_empresa = $request->id_empresa;
         $u->save();
 
         return ['status'=>true,
@@ -131,7 +128,7 @@ class ServicoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  string  $cpf
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

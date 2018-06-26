@@ -18,7 +18,7 @@ class CreateServicosTable extends Migration
             $table->string('descricao', 30);
             $table->decimal('preco', 5, 2);
             $table->time('tempo_servico');
-            $table->integer('id_empresa');
+            $table->string('id_empresa', 14);
             $table->timestamps();
         });
     }

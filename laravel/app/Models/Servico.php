@@ -3,9 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Servico {
-    use Notifiable;
+class Servico extends Authenticatable
+{
+   use Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -13,24 +15,7 @@ class Servico {
      * @var array
      */
     protected $fillable = [
-        'descricao', 'preco', 'created_at', 'updated_at'
+        'id', 'descricao', 'preco', 'tempo_servico', 'id_empresa'
     ];
 
-    //-------------------- AGREGAR -------------------
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function servico()
-    {
-        return $this->belongsTo('App\Models\Servico');
-    }
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
-    public function servicosRols()
-    {
-        return $this->hasMany('App\Models\ServicoRol', 'servicos_id');
-    }
 }

@@ -6,7 +6,7 @@
 
 @section('contenido')
     <a href="{{route('servico.create')}}">
-    <button type="button" class="btn btn-primary">Criar Serviço</button></a>
+    <button type="button" class="btn btn-primary">Adicionar Serviço</button></a>
 
     <br><br>
 	
@@ -15,7 +15,9 @@
 	      <tr>
 	        <th>ID</th>
 	        <th>DESCRIÇÃO</th>
-	        <th>PREÇO</th>
+            <th>VALOR (R$)</th>
+            <th>TEMPO EM MINUTOS</th>
+            <th>EMPRESA</th>
             <th>AÇÃO</th>
 	      </tr>
 	    </thead>
@@ -39,20 +41,22 @@ $(function() {
                 data: {"_token":"{{ csrf_token() }}"}
                 },
         columns: [                    
-                { data: 'id', name: 'id', className:'center'},
-                { data: 'descricao', name: 'descricao'},                
-                { data: 'preco', name: 'preco', className:'center'}
+                { data: 'id', name: 'id', className:'center' },
+                { data: 'descricao', name: 'descricao' },
+                { data: 'preco', name: 'preco' },
+                { data: 'tempo_servico', name: 'tempo_servico' },
+                { data: 'id_empresa', name: 'id_empresa' },
+                { data: 'id', name: 'id', className:'center'}
             ],
-            columnDefs: [
-            {
-                targets: 3,
-                createdCell: function (td, cellData, rowData, row, col) {
-                    show="{!!URL::to('servico/"+cellData+"')!!}";
-                    edit="{!!URL::to('servico/"+cellData+"/edit')!!}";
-                    deleted="{!!URL::to('servico/"+cellData+"')!!}";
-                    $(td).html(buttonsTable(show,edit,deleted,true));
-                }
+        columnDefs: [
+        {
+            targets: 5,
+            createdCell: function (td, cellData, rowData, row, col) {
+                edit="{!!URL::to('servico/"+cellData+"/edit')!!}";
+                deleted="{!!URL::to('servico/"+cellData+"')!!}";
+                $(td).html(buttonsTable(false,edit,deleted,true));
             }
+        }
         ]
     });
     
