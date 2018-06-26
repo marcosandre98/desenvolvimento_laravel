@@ -55,8 +55,8 @@
         <small>Optional description</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-        <li class="active">Here</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Nível</a></li>
+        <li class="active">Aqui</li>
       </ol>
     </section>
 
@@ -74,10 +74,10 @@
   <footer class="main-footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
-      Anything you want
+      Agende o que você precisar...
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
+    <strong>Sistema de Agendamentos &copy; 2018 <a href="#">Company</a>.</strong> Todos os direitos reservados.
   </footer>
 
   <!-- Control Sidebar -->
@@ -92,7 +92,7 @@
     <div class="tab-content">
       <!-- Home tab content -->
       <div class="tab-pane active" id="control-sidebar-home-tab">
-        <h3 class="control-sidebar-heading">Recent Activity</h3>
+        <h3 class="control-sidebar-heading">Atividade recente</h3>
         <ul class="control-sidebar-menu">
           <li>
             <a href="javascript:;">

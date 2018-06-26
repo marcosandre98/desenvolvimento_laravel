@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Ingresar</div>
+                <div class="panel-heading">Entrar</div>
                 <div class="panel-body">
                     <form class="form-horizontal" data-method="POST" data-route="{{ route('prelogin') }}" id="formPreLogin">
                         {{ csrf_field() }}
@@ -35,7 +35,7 @@
                             <div class="col-md-6 col-md-offset-4">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Lembrar
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Lembrar-me
                                     </label>
                                 </div>
                             </div>
