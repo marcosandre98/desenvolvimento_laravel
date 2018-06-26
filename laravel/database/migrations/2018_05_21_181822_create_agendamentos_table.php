@@ -14,11 +14,14 @@ class CreateAgendamentosTable extends Migration
     public function up()
     {
         Schema::create('agendamentos', function (Blueprint $table) {
-            $table->integer('id_empresa');
+            $table->increments('id');
+            $table->string('id_empresa', 14);
+            $table->string('cep', 15);
             $table->date('dt_agendamento');
+            $table->integer('id_servico');
+            $table->decimal('preco' , 5, 2);
             $table->time('hr_inicial');
             $table->time('hr_final');
-            $table->integer('id_servico');
             $table->integer('id_cliente');
             $table->timestamps();
         });
