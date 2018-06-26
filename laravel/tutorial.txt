@@ -1,0 +1,28 @@
+TUTORIAL 
+------------------------------------------------
+
+1 passo 
+dentro de resources -> views criar a pasta com o nome da tabela. Ex: cliente
+dentro da pasta cliente terá terá as telas de consulta, criacao e edicao.
+Alterar o conteudo de cada uma das pastas, conforme os campos da tabela.
+
+2 passo
+dentro da pasta app -> Http -> Controllers há o controlador da tabela que vc está
+criando. Ex: ClienteController
+alterar os dados desse arquivo conforme necessário para utilizar a tabela
+
+3 passo 
+dentro da pasta app -> Models tem o model do arquivo. Ex: Cliente.php
+alterar o arquivo;
+
+4 passo 
+dentro da pasta routes tem o arquivo web.php
+colocar dentro desse arquivo a rota da tela que vc criou anteriormente. olhem como
+exemplo a parte do cliente.
+
+5 passo
+dentro da pasta resources -> views -> layoults -> master.blade.php
+ir na linha 140, que tem a inclusao do Cliente no menu, e abaixo colocar o menu desejado;
+
+6 passo 
+testar as telas criadas
