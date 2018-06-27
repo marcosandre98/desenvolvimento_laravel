@@ -38,7 +38,7 @@
                             <label for="tempo_servico" class="col-md-4 control-label">Tempo Serviço: *</label>
 
                             <div class="col-md-6">
-                                <input id="tempo_servico" type="text" class="form-control" name="tempo_servico" placeholder="00:00:00">
+                                <input id="tempo_servico" type="time" class="form-control" name="tempo_servico">
 
                                 <span class="msg-error hidden" id="err_tempo_servico"></span>
                                 
