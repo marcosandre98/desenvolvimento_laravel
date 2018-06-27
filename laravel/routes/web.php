@@ -44,3 +44,8 @@ Route::group(['middleware' => ['auth']], function () {
 	Route::post('/cliente/showTable','ClienteController@showTable')->name('cliente.showTable');
 });
 
+Route::group(['middleware' => ['auth']], function () {
+	Route::resource('empresa','EmpresaController');
+	Route::post('/empresa/showTable','EmpresaController@showTable')->name('empresa.showTable');
+});
+

@@ -138,6 +138,7 @@
         <!-- Optionally, you can add icons to the links -->
         <li class="active"><a href="{{ url('/servico') }}"><i class="fa fa-gears"></i> <span>Serviços</span></a></li>
         <li class="active"><a href="{{ url('/cliente') }}"><i class="fa fa-user"></i> <span>Clientes</span></a></li>
+        <li class="active"><a href="{{ url('/empresa') }}"><i class="fa fa-briefcase"></i> <span>Empresas</span></a></li>
         <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
