@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Adicionar Serviço</div>
+                <div class="panel-heading">Adicionar Servico</div>
                 <div class="panel-body">
 
                     <form class="form-horizontal" id="fCriaServico" data-route="{{route('servico.store')}}" data-method="POST">
