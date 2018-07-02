@@ -130,6 +130,8 @@
                                 <input id="genero" type="radio" name="genero" value="M">Masculino
                                 &nbsp&nbsp&nbsp&nbsp
                                 <input id="genero" type="radio" name="genero" value="F">Feminino
+                                &nbsp&nbsp&nbsp&nbsp
+                                <input id="genero" type="radio" name="genero" value="O">Outro
 
                                 <span class="msg-error hidden" id="err_genero"></span>
                                 
