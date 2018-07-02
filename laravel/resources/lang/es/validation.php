@@ -30,7 +30,7 @@ return [
         'array'   => 'El campo :attribute debe contener entre :min y :max elementos.',
     ],
     'boolean'              => 'El campo :attribute debe ser verdadero o falso.',
-    'confirmed'            => 'El campo confirmación de :attribute no coincide.',
+    'confirmed'            => 'O campo de confirmação de :attribute não coincide.',
     'country'              => 'El campo :attribute no es un país válido.',
     'date'                 => 'El campo :attribute no corresponde con una fecha válida.',
     'date_format'          => 'El campo :attribute no corresponde con el formato de fecha :format.',
@@ -86,7 +86,7 @@ return [
     'state'                => 'El estado no es válido para el país seleccionado.',
     'string'               => 'El campo :attribute debe contener sólo caracteres.',
     'timezone'             => 'El campo :attribute debe contener una zona válida.',
-    'unique'               => 'El elemento :attribute ya está en uso.',
+    'unique'               => 'O elemento :attribute já está sendo usado.',
     'uploaded'             => 'El elemento :attribute falló al subir.',
     'url'                  => 'El formato de :attribute no corresponde con el de una URL válida.',
 

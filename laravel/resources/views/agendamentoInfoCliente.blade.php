@@ -127,7 +127,9 @@
                             <label for="genero" class="col-md-4 control-label">Gênero:</label>
 
                             <div class="col-md-6">
-                                <input id="genero" type="text" class="form-control" name="genero" placeholder="M ou F">
+                                <input id="genero" type="radio" name="genero" value="M">Masculino
+                                &nbsp&nbsp&nbsp&nbsp
+                                <input id="genero" type="radio" name="genero" value="F">Feminino
 
                                 <span class="msg-error hidden" id="err_genero"></span>
                                 

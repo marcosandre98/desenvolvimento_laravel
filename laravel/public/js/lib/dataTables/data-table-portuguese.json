@@ -2,7 +2,7 @@
 	"sProcessing":     "Processando...",
 	"sLengthMenu":     "Mostrar _MENU_ registros",
 	"sZeroRecords":    "Não há resultados",
-	"sEmptyTable":     "Ningún dato disponible en esta tabla",
+	"sEmptyTable":     "Sem dados na tabela",
 	"sInfo":           "Mostrando registros de _START_ à _END_ de um total de _TOTAL_ registros",
 	"sInfoEmpty":      "Mostrando registros 0 à 0 de um total de 0 registros",
 	"sInfoFiltered":   "(filtrado um total de _MAX_ registros)",
@@ -14,7 +14,7 @@
 	"oPaginate": {
 		"sFirst":    "Primeiro",
 		"sLast":     "Último",
-		"sNext":     "Seguinte",
+		"sNext":     "Próximo",
 		"sPrevious": "Anterior"
 	},
 	"oAria": {

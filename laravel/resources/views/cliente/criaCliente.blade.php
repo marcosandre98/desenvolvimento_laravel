@@ -13,7 +13,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group">
-                            <label for="id" class="col-md-4 control-label">CPF:</label>
+                            <label for="id" class="col-md-4 control-label">CPF: *</label>
 
                             <div class="col-md-6">
                                 <input id="id" type="text" class="form-control" name="id" autofocus>
@@ -24,7 +24,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="nome" class="col-md-4 control-label">Nome:</label>
+                            <label for="nome" class="col-md-4 control-label">Nome: *</label>
 
                             <div class="col-md-6">
                                 <input id="nome" type="text" class="form-control" name="nome">
@@ -35,7 +35,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="dt_nascimento" class="col-md-4 control-label">Data Nascimento:</label>
+                            <label for="dt_nascimento" class="col-md-4 control-label">Data Nascimento: *</label>
 
                             <div class="col-md-6">
                                 <input id="dt_nascimento" type="date" class="form-control" name="dt_nascimento">
@@ -46,10 +46,12 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="genero" class="col-md-4 control-label">Gênero:</label>
+                            <label for="genero" class="col-md-4 control-label">Gênero: *</label>
 
                             <div class="col-md-6">
-                                <input id="genero" type="text" class="form-control" name="genero" placeholder="M ou F">
+                                <input id="genero" type="radio" name="genero" value="M">Masculino
+                                &nbsp&nbsp&nbsp
+                                <input id="genero" type="radio" name="genero" value="F">Feminino
 
                                 <span class="msg-error hidden" id="err_genero"></span>
                                 
@@ -57,7 +59,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="" class="col-md-4 control-label">Fone:</label>
+                            <label for="" class="col-md-4 control-label">Fone: *</label>
 
                             <div class="col-md-6">
                                 <input id="ddd" type="text" class="form" name="ddd" placeholder="DDD" size="2">
@@ -69,7 +71,7 @@
                         </div>                        
 
                         <div class="form-group">
-                            <label for="cep" class="col-md-4 control-label">CEP:</label>
+                            <label for="cep" class="col-md-4 control-label">CEP: *</label>
 
                             <div class="col-md-6">
                                 <input id="cep" type="text" class="form-control" name="cep">
@@ -80,7 +82,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="uf_estado" class="col-md-4 control-label">UF:</label>
+                            <label for="uf_estado" class="col-md-4 control-label">UF: *</label>
 
                             <div class="col-md-6">
                                 <input id="uf_estado" type="text" class="form-control" name="uf_estado">

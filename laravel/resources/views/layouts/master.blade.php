@@ -116,14 +116,14 @@
         <div class="pull-left info">
           <p>{{ Auth::user()->name }}</p>
           <!-- Status -->
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          
         </div>
       </div>
 
       <!-- search form (Optional) -->
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <input type="text" name="q" class="form-control" placeholder="Pesquisar...">
           <span class="input-group-btn">
               <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
               </button>
@@ -139,6 +139,7 @@
         <li class="active"><a href="{{ url('/servico') }}"><i class="fa fa-gears"></i> <span>Serviços</span></a></li>
         <li class="active"><a href="{{ url('/cliente') }}"><i class="fa fa-user"></i> <span>Clientes</span></a></li>
         <li class="active"><a href="{{ url('/empresa') }}"><i class="fa fa-briefcase"></i> <span>Empresas</span></a></li>
+        <!--
         <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
@@ -151,7 +152,7 @@
             <li><a href="#">Link in level 2</a></li>
           </ul>
         </li>
-      </ul>
+      </ul> -->
       <!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->
@@ -183,10 +184,11 @@
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <!-- To the right -->
+    <!-- To the right 
     <div class="pull-right hidden-xs">
       Anything you want
     </div>
+  -->
     <!-- Default to the left -->
     <strong>Sistema de Agendamentos &copy; 2018 <a href="#">Company</a>.</strong> Todos os direitos reservados.
   </footer>
