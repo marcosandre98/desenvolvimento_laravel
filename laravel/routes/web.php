@@ -28,27 +28,18 @@ Route::group(['middleware' => ['btnBackLogin','auth']], function () {
 });
 
 Route::group(['middleware' => ['auth']], function () {
-	Route::resource('usuario','UsuarioController');
 	Route::post('/usuario/showTable','UsuarioController@showTable')->name('usuario.showTable');
-});
-
-Route::group(['middleware' => ['auth']], function () {
-	Route::resource('servico','ServicoController');
 	Route::post('/servico/showTable','ServicoController@showTable')->name('servico.showTable');
-});
-
-Route::group(['middleware' => ['auth']], function () {
-	Route::resource('cliente','ClienteController');
 	Route::post('/cliente/showTable','ClienteController@showTable')->name('cliente.showTable');
-});
-
-Route::group(['middleware' => ['auth']], function () {
-	Route::resource('empresa','EmpresaController');
 	Route::post('/empresa/showTable','EmpresaController@showTable')->name('empresa.showTable');
-});
-
-Route::group(['middleware' => ['auth']], function () {
-	Route::resource('agendamento','AgendamentoController');
 	Route::post('/agendamento/showTable','AgendamentoController@showTable')->name('agendamento.showTable');
+
+	Route::resources([
+	    'usuario' => 'UsuarioController',
+	    'servico' => 'ServicoController',
+	    'cliente' => 'ClienteController',
+	    'empresa' => 'EmpresaController',
+	    'agendamento' => 'AgendamentoController'
+	]);
 });
 

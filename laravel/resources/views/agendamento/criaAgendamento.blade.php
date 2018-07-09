@@ -62,7 +62,7 @@
                             <label for="hr_inicial" class="col-md-4 control-label">Hora Inicial: *</label>
 
                             <div class="col-md-6">
-                                <input id="hr_inicial" type="text" class="form-control" name="hr_inicial" required>
+                                <input id="hr_inicial" type="time" class="form-control" name="hr_inicial" required>
                                 <span class="msg-error hidden" id="err_hr_inicial"></span>
                             </div>
                         </div>    
@@ -71,7 +71,7 @@
                             <label for="hr_final" class="col-md-4 control-label">Hora Final: *</label>
 
                             <div class="col-md-6">
-                                <input id="hr_final" type="text" class="form-control" name="hr_final" required>
+                                <input id="hr_final" type="time" class="form-control" name="hr_final" required>
                                 <span class="msg-error hidden" id="err_hr_final"></span>
                             </div>
                         </div>

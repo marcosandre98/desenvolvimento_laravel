@@ -142,11 +142,11 @@ function modal(route){
 
 function destroy(route){
 	bootbox.confirm({
-		title:'Confirmación',
-	    message: '¿Está seguro de eliminar el registro?',
+		title:'Confirmação',
+	    message: 'Deseja mesmo excluir o registro?',
 	    buttons: {
-	        confirm: {label: 'Si, seguro.',className: 'btn-danger'},
-	        cancel: {label: 'No',className: 'btn-default'}
+	        confirm: {label: 'Sim',className: 'btn-danger'},
+	        cancel: {label: 'Não',className: 'btn-default'}
 	    },
 	    callback: function (result) {
 	    	if (result){
