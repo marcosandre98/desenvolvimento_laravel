@@ -22,7 +22,7 @@ class CreateAgendamentosTable extends Migration
             $table->decimal('preco' , 5, 2);
             $table->time('hr_inicial');
             $table->time('hr_final');
-            $table->integer('id_cliente');
+            $table->string('id_cliente', 11);
             $table->timestamps();
         });
     }

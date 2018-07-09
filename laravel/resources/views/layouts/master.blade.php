@@ -55,7 +55,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>gE</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Agenda</b>E</span>
+      <span class="logo-lg"><b>AgendA</b>E</span>
     </a>
 
     <!-- Header Navbar -->
@@ -120,22 +120,11 @@
         </div>
       </div>
 
-      <!-- search form (Optional) -->
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Pesquisar...">
-          <span class="input-group-btn">
-              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-              </button>
-            </span>
-        </div>
-      </form>
-      <!-- /.search form -->
-
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">Menus</li>
         <!-- Optionally, you can add icons to the links -->
+        <li class="active"><a href="{{ url('/agendamento') }}"><i class="fa fa-calendar"></i> <span>Agendamentos</span></a></li>
         <li class="active"><a href="{{ url('/servico') }}"><i class="fa fa-gears"></i> <span>Serviços</span></a></li>
         <li class="active"><a href="{{ url('/cliente') }}"><i class="fa fa-user"></i> <span>Clientes</span></a></li>
         <li class="active"><a href="{{ url('/empresa') }}"><i class="fa fa-briefcase"></i> <span>Empresas</span></a></li>
@@ -162,10 +151,6 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>
-        Page Header
-        <small>Optional description</small>
-      </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
         <li class="active">Here</li>

@@ -72,9 +72,9 @@ class LoginController extends Controller
                    'html'=>$html];
         }else{
             return ['status'=>true,'out'=>'alert',
-                   'title'=>'Error al Ingresar',
-                   'html'=>'Los datos ingresados no son correctos.<br>
-                    Verifique e intente nuevamente.'];
+                   'title'=>'Erro ao acessar',
+                   'html'=>'Os dados estão incorretos.<br>
+                    Verifique e tente novamente.'];
         }
     }
 
@@ -89,8 +89,8 @@ class LoginController extends Controller
             return ['status'=>true,'out'=>'redirect','route'=>route('home')];
         }else{
             return ['status'=>true,'out'=>'alert',
-                   'title'=>'Error al Ingresar',
-                   'html'=>'Hubo un error al ingresar, verifique e intente nuevamente.'];   
+                   'title'=>'Error ao acesar',
+                   'html'=>'Ocorreu um erro, verifique e tente novamente.'];   
         }
     }
 }
